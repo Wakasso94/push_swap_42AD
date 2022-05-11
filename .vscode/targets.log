@@ -1,0 +1,434 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# This program built for i386-apple-darwin11.3.0
+ 
+
+# Make data base, printed on Wed May 11 13:51:56 2022
+
+# Variables
+
+# environment
+VSCODE_GIT_ASKPASS_MAIN = /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/git/dist/askpass-main.js
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# environment
+VSCODE_LOG_NATIVE = false
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# makefile
+CURDIR := /Users/mac/Desktop/42-project/Wakasso/push_swap
+# makefile
+SHELL = /bin/sh
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+ 
+_ = /usr/bin/make
+# makefile (from `Makefile', line 17)
+CFLAGS = -Wall -Wextra -Werror
+# makefile (from `Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# makefile (from `Makefile', line 19)
+SRC1 = push_swap.c validation.c actions.c actions_2.c actions_3.c quick_sort.c separation.c initialization.c sort_3_and_5_element.c global_sort.c finding_place.c
+# makefile (from `Makefile', line 36)
+LIB_BINARY = -L./includes/libft -lft
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+__CFBundleIdentifier = com.microsoft.VSCode
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/t9/13mvjs3n10l5mx6x47rj4b5h0000gn/T/vscode-ipc-dcdd61d6-eeeb-4065-b925-7ef82b9b234d.sock
+# environment
+VSCODE_CWD = /Users/mac/Desktop/42-project/Wakasso
+# makefile (from `Makefile', line 26)
+OBJSFD = temporary
+# environment
+PATH = /Users/mac/.volta/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:/Library/Apple/usr/bin:/Users/mac/.volta/bin:/Users/mac/Developer/flutter/bin:/Users/mac/Documents/42-ValgrindContainer:/Users/mac/Developer/flutter/bin:/Users/mac/Documents/42-ValgrindContainer
+# makefile (from `Makefile', line 30)
+OBJS2 = $(addprefix $(OBJSFD)/,$(SRC2:.c=.o))
+# environment
+LSCOLORS = Gxfxcxdxbxegedabagacad
+# makefile (from `Makefile', line 23)
+SRC2 = checker.c validation.c actions.c actions_2.c actions_3.c quick_sort.c separation.c initialization.c
+# environment
+LaunchInstanceID = D668DC68-E0DC-4165-85D8-63EF6908BF79
+# environment
+VSCODE_LOG_STACK = false
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# default
+.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+# environment
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.HaXN21GnR5/Listeners
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+PWD = /Users/mac/Desktop/42-project/Wakasso/push_swap
+# makefile (from `Makefile', line 28)
+OBJS1 = $(addprefix $(OBJSFD)/,$(SRC1:.c=.o))
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# makefile (from `Makefile', line 32)
+HDR = -I./includes
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /Users/mac
+# default
+MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
+# environment
+VSCODE_CLI = 1
+# environment
+VSCODE_CODE_CACHE_PATH = /Users/mac/Library/Application Support/Code/CachedData/57fd6d0195bb9b9d1b49f6da5db789060795de47
+# environment
+LOGNAME = mac
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+ZSH = /Users/mac/.oh-my-zsh
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+MAKELEVEL := 0
+# environment
+XPC_FLAGS = 0x0
+# environment
+COLORTERM = truecolor
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+SHLVL = 5
+# environment
+VOLTA_HOME = /Users/mac/.volta
+# makefile (from `Makefile', line 44)
+LIBFT = ./includes/libft/libft.a
+# default
+MAKE_VERSION := 3.81
+# environment
+USER = mac
+# makefile
+.DEFAULT_GOAL := all
+# environment
+LESS = -R
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# default
+MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
+# environment
+VSCODE_GIT_ASKPASS_EXTRA_ARGS = --ms-enable-electron-run-as-node
+# environment
+TERM_PROGRAM = vscode
+# default
+.VARIABLES := 
+# environment
+TMPDIR = /var/folders/t9/13mvjs3n10l5mx6x47rj4b5h0000gn/T/
+# automatic
+*F = $(notdir $*)
+# environment
+VSCODE_IPC_HOOK = /Users/mac/Library/Application Support/Code/1.67.0-main.sock
+# environment
+VSCODE_GIT_ASKPASS_NODE = /Applications/Visual Studio Code.app/Contents/MacOS/Electron
+# makefile
+MAKEFLAGS = Rrqp
+# environment
+MFLAGS = -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+TERM_PROGRAM_VERSION = 1.67.0
+# makefile (from `Makefile', line 34)
+LIBFT_HDR = -I./includes/libft
+# environment
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.12897484351.12897484357.1ED917D0-D182-47E3-BDC1-49545CA17E47
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# makefile (from `Makefile', line 13)
+NAME1 = push_swap
+# automatic
++F = $(notdir $+)
+# environment
+__CF_USER_TEXT_ENCODING = 0x1F5:0x0:0x0
+# environment
+COMMAND_MODE = unix2003
+# environment
+GIT_ASKPASS = /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/git/dist/askpass.sh
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# environment
+ 
+PAGER = less
+# environment
+LC_ALL = C
+# makefile (from `Makefile', line 15)
+NAME2 = checker
+# environment
+SECURITYSESSIONID = 186a3
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# default
+.INCLUDE_DIRS = /usr/local/include
+# environment
+VSCODE_GIT_IPC_HANDLE = /var/folders/t9/13mvjs3n10l5mx6x47rj4b5h0000gn/T/vscode-git-e4d30ae47b.sock
+# environment
+LANG = C
+# environment
+TERM = xterm-256color
+# environment
+VSCODE_PID = 435
+# variable set hash-table stats:
+# Load=92/1024=9%, Rehash=0, Collisions=5/136=4%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 16777220, inode 12897542019): 18 files, no impossibilities.
+
+# 18 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+temporary/%.o: %.c | temporary
+#  commands to execute (from `Makefile', line 53):
+	gcc -g $(CFLAGS) $(HDR) $(LIBFT_HDR) -c $< -o $@
+	
+
+# 1 implicit rules, 0 (0.0%) terminal.
+
+# Files
+
+all: includes/libft/libft.a includes/libft/libft.a push_swap checker
+#  Command-line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/2=0%
+
+FORCE:
+#  Implicit rule search has not been done.
+#  Last modified 1970-01-01 03:59:56
+#  File has been updated.
+#  Successfully updated.
+#  commands to execute (from `Makefile', line 42):
+	
+
+# Not a target:
+temporary/actions.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+includes/push_swap.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+temporary/separation.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-07 19:58:19
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+temporary/global_sort.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+temporary/validation.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+includes/libft/libft.a: FORCE
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `'
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := includes/libft/libft.a
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := FORCE
+# automatic
+# | := 
+# automatic
+# < := FORCE
+# automatic
+# ^ := FORCE
+# automatic
+# ? := FORCE
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/10=10%
+#  commands to execute (from `Makefile', line 47):
+	make -C ./includes/libft
+	
+
+# Not a target:
+temporary/finding_place.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+fclean: clean
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 67):
+	/bin/rm -f $(NAME1)
+	/bin/rm -f $(NAME2)
+	make -C ./includes/libft fclean
+	
+
+# Not a target:
+temporary/actions_2.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+temporary/push_swap.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+temporary/sort_3_and_5_element.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+checker: temporary/checker.o temporary/validation.o temporary/actions.o temporary/actions_2.o temporary/actions_3.o temporary/quick_sort.o temporary/separation.o temporary/initialization.o includes/libft/libft.a includes/push_swap.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 59):
+	gcc -g $(OBJS2) $(LIB_BINARY) -o $@
+	
+
+re: fclean all
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 62):
+	/bin/rm -f $(OBJS)
+	rm -rf $(OBJSFD)
+	make -C ./includes/libft clean
+	
+
+push_swap: temporary/push_swap.o temporary/validation.o temporary/actions.o temporary/actions_2.o temporary/actions_3.o temporary/quick_sort.o temporary/separation.o temporary/initialization.o temporary/sort_3_and_5_element.o temporary/global_sort.o temporary/finding_place.o includes/libft/libft.a includes/push_swap.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 56):
+	gcc -g $(OBJS1) $(LIB_BINARY) -o $@
+	
+
+# Not a target:
+temporary/checker.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+temporary/quick_sort.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+ 
+#  File has not been updated.
+
+# Not a target:
+temporary/actions_3.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+temporary:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 50):
+	mkdir $@
+	
+
+# Not a target:
+temporary/initialization.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=25/1024=2%, Rehash=0, Collisions=0/70=0%
+# VPATH Search Paths
+
+# No `vpath' search paths.
+
+# No general (`VPATH' variable) search path.
+
+# # of strings in strcache: 1
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
+
+# Finished Make data base on Wed May 11 13:51:56 2022
+
+ 

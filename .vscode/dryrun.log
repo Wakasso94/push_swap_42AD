@@ -1,0 +1,25 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory `/Users/mac/Desktop/42-project/Wakasso/push_swap'
+make -C ./includes/libft
+mkdir temporary
+gcc -g -Wall -Wextra -Werror -I./includes -I./includes/libft -c push_swap.c -o temporary/push_swap.o
+gcc -g -Wall -Wextra -Werror -I./includes -I./includes/libft -c validation.c -o temporary/validation.o
+gcc -g -Wall -Wextra -Werror -I./includes -I./includes/libft -c actions.c -o temporary/actions.o
+ 
+gcc -g -Wall -Wextra -Werror -I./includes -I./includes/libft -c actions_2.c -o temporary/actions_2.o
+gcc -g -Wall -Wextra -Werror -I./includes -I./includes/libft -c quick_sort.c -o temporary/quick_sort.o
+ 
+make: *** No rule to make target `temporary/actions_3.o', needed by `push_swap'.
+
+gcc -g -Wall -Wextra -Werror -I./includes -I./includes/libft -c separation.c -o temporary/separation.o
+gcc -g -Wall -Wextra -Werror -I./includes -I./includes/libft -c initialization.c -o temporary/initialization.o
+gcc -g -Wall -Wextra -Werror -I./includes -I./includes/libft -c sort_3_and_5_element.c -o temporary/sort_3_and_5_element.o
+ 
+gcc -g -Wall -Wextra -Werror -I./includes -I./includes/libft -c global_sort.c -o temporary/global_sort.o
+gcc -g -Wall -Wextra -Werror -I./includes -I./includes/libft -c finding_place.c -o temporary/finding_place.o
+gcc -g -Wall -Wextra -Werror -I./includes -I./includes/libft -c checker.c -o temporary/checker.o
+ 
+make: *** No rule to make target `includes/push_swap.h', needed by `push_swap'.
+
+make: Leaving directory `/Users/mac/Desktop/42-project/Wakasso/push_swap'
+ 
