@@ -6,7 +6,7 @@
 #    By: imaman-s < imaman-s@student.42abudhabi.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/07 18:37:53 by imaman-s          #+#    #+#              #
-#    Updated: 2022/05/07 19:58:19 by imaman-s         ###   ########.fr        #
+#    Updated: 2022/05/15 17:17:01 by imaman-s         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,11 +16,11 @@ NAME2	= checker
 
 CFLAGS 	= -Wall -Wextra -Werror
 
-SRC1 	= push_swap.c validation.c actions.c actions_2.c actions_3.c \
+SRC1 	= push_swap.c validation.c operations.c operations_2.c operations_3.c \
 			quick_sort.c separation.c initialization.c sort_3_and_5_element.c \
 				global_sort.c finding_place.c
 
-SRC2 	= checker.c validation.c actions.c actions_2.c actions_3.c \
+SRC2 	= checker.c validation.c operations.c operations_2.c operations_3.c \
 			quick_sort.c separation.c initialization.c
 
 OBJSFD 	= temporary

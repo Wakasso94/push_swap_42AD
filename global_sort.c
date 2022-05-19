@@ -6,7 +6,7 @@
 /*   By: imaman-s < imaman-s@student.42abudhabi.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/07 18:37:47 by imaman-s          #+#    #+#             */
-/*   Updated: 2022/05/11 19:46:47 by imaman-s         ###   ########.fr       */
+/*   Updated: 2022/05/15 17:17:01 by imaman-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -135,7 +135,7 @@ void	ft_minimum_insertion_steps(t_stacks *stacks, t_steps *steps)
 /*
 ** <----------------------------------------------------------->
 ** ft_instruction_execution is a function that
-** performs actions according to the previously set parameters.
+** performs operations according to the previously set parameters.
 ** <----------------------------------------------------------->
 */
 

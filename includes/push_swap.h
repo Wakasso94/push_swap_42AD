@@ -6,7 +6,7 @@
 /*   By: imaman-s < imaman-s@student.42abudhabi.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/07 18:38:01 by imaman-s          #+#    #+#             */
-/*   Updated: 2022/05/11 19:53:40 by imaman-s         ###   ########.fr       */
+/*   Updated: 2022/05/15 17:17:01 by imaman-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ typedef struct		s_data
 	int				count_element;
 }					t_data;
 
+/*Pointer *next is self referential structure*/
 typedef struct		s_stack
 {
 	int				data;
@@ -140,7 +141,7 @@ int					ft_count_to_min(t_stack *a, int min);
 
 /*
 ** <------------------>
-** actions.c - Actions
+** operations.c - operations
 ** <------------------>
 */
 
@@ -152,7 +153,7 @@ void				ft_rrb(t_stack **b, int i);
 
 /*
 ** <----------------->
-** actions.c - Actions
+** operations.c - operations
 ** <----------------->
 */
 
