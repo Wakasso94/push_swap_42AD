@@ -6,7 +6,7 @@
 /*   By: imaman-s < imaman-s@student.42abudhabi.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/07 18:37:39 by imaman-s          #+#    #+#             */
-/*   Updated: 2022/05/11 19:43:50 by imaman-s         ###   ########.fr       */
+/*   Updated: 2022/05/28 08:50:48 by imaman-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ void	ft_action_processing(char *line, t_stacks *s)
 
 void	ft_read_action(t_stacks *s)
 {
-	char *line;
+	char	*line;
 
 	line = NULL;
 	while (get_next_line(0, &line))
@@ -79,7 +79,7 @@ void	ft_read_action(t_stacks *s)
 ** <------------------------------------------------>
 */
 
-int		ft_stack_sorted(t_stacks *s)
+int	ft_stack_sorted(t_stacks *s)
 {
 	int		i;
 	int		buff;
@@ -102,7 +102,7 @@ int		ft_stack_sorted(t_stacks *s)
 	return (1);
 }
 
-int		main(int argc, char **argv)
+int	main(int argc, char **argv)
 {
 	t_data		*new;
 	t_stacks	*stacks;

@@ -6,15 +6,15 @@
 /*   By: imaman-s < imaman-s@student.42abudhabi.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/11 13:44:57 by imaman-s          #+#    #+#             */
-/*   Updated: 2022/05/11 13:48:00 by imaman-s         ###   ########.fr       */
+/*   Updated: 2022/05/28 09:00:08 by imaman-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_strcmp(const char *s1, const char *s2)
+int	ft_strcmp(const char *s1, const char *s2)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (s1[i] != '\0' || s2[i] != '\0')

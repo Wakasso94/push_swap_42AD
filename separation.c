@@ -6,7 +6,7 @@
 /*   By: imaman-s < imaman-s@student.42abudhabi.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/07 18:38:07 by imaman-s          #+#    #+#             */
-/*   Updated: 2022/05/11 19:48:41 by imaman-s         ###   ########.fr       */
+/*   Updated: 2022/05/28 09:24:59 by imaman-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,8 @@ void	ft_array_separation(int argc, char **argv, t_data *new)
 		p = -1;
 		count_element = ft_countword(argv[i]);
 		mass = ft_strsplit(argv[i], count_element);
-		if (!(buff = (int *)malloc(sizeof(int) * (count_element))))
+		buff = (int *)malloc(sizeof(int) * (count_element));
+		if (!buff)
 			exit(1);
 		while (count_element > ++p)
 		{
@@ -49,7 +50,7 @@ void	ft_array_separation(int argc, char **argv, t_data *new)
 
 void	ft_stacking(t_data *new, int *buff, int count)
 {
-	int i;
+	int	i;
 
 	i = -1;
 	while (count > ++i)

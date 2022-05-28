@@ -6,7 +6,7 @@
 /*   By: imaman-s < imaman-s@student.42abudhabi.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/07 18:37:47 by imaman-s          #+#    #+#             */
-/*   Updated: 2022/05/15 17:17:01 by imaman-s         ###   ########.fr       */
+/*   Updated: 2022/05/25 16:22:16 by imaman-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,9 +48,10 @@ void	ft_global_sort(t_stacks *stacks)
 
 void	ft_start_sort(t_stacks *stacks)
 {
-	t_steps *step;
+	t_steps		*step;
 
-	if (!(step = (t_steps *)malloc(sizeof(t_steps))))
+	step = (t_steps *)malloc(sizeof(t_steps));
+	if (!step)
 		exit(1);
 	while (stacks->count_b != 0)
 	{

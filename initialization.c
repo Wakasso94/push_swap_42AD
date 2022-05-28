@@ -6,7 +6,7 @@
 /*   By: imaman-s < imaman-s@student.42abudhabi.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/07 18:37:50 by imaman-s          #+#    #+#             */
-/*   Updated: 2022/05/11 19:47:56 by imaman-s         ###   ########.fr       */
+/*   Updated: 2022/05/28 09:07:11 by imaman-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,14 +40,16 @@ t_stack	*ft_create_stack(const int *buff, int count)
 	t_stack	*first_element;
 
 	i = 0;
-	if (!(new_list = (t_stack *)malloc(sizeof(t_stack))))
+	new_list = (t_stack *)malloc(sizeof(t_stack));
+	if (!new_list)
 		exit(1);
 	first_element = new_list;
 	while (i < count)
 	{
 		if (i < count - 1)
 		{
-			if (!(new_list->next = (t_stack *)malloc(sizeof(t_stack))))
+			new_list->next = (t_stack *)malloc(sizeof(t_stack));
+			if (!new_list->next)
 				exit(1);
 		}
 		new_list->data = buff[i];

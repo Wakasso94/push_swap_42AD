@@ -6,7 +6,7 @@
 /*   By: imaman-s < imaman-s@student.42abudhabi.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/07 18:37:57 by imaman-s          #+#    #+#             */
-/*   Updated: 2022/05/07 19:58:33 by imaman-s         ###   ########.fr       */
+/*   Updated: 2022/05/28 09:51:50 by imaman-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,16 +22,18 @@ void	ft_sort(t_stacks *stacks)
 		ft_global_sort(stacks);
 }
 
-int		main(int argc, char **argv)
+int	main(int argc, char **argv)
 {
 	t_data		*new;
 	t_stacks	*stacks;
 
 	if (argc < 2)
 		exit(1);
-	if (!(new = (t_data *)malloc(sizeof(t_data))))
+	new = (t_data *)malloc(sizeof(t_data));
+	if (!new)
 		exit(1);
-	if (!(stacks = (t_stacks *)malloc(sizeof(t_stacks))))
+	stacks = (t_stacks *)malloc(sizeof(t_stacks));
+	if (!stacks)
 		exit(1);
 	ft_null(stacks, new);
 	if (ft_validation(argc, argv))

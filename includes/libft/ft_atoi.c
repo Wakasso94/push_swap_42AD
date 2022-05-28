@@ -6,13 +6,13 @@
 /*   By: imaman-s < imaman-s@student.42abudhabi.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/11 13:44:31 by imaman-s          #+#    #+#             */
-/*   Updated: 2022/05/11 13:45:45 by imaman-s         ###   ########.fr       */
+/*   Updated: 2022/05/28 08:57:44 by imaman-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_atoi(const char *str)
+int	ft_atoi(const char *str)
 {
 	int		sign;
 	int		dig;
@@ -38,5 +38,5 @@ int		ft_atoi(const char *str)
 			ft_error();
 		str++;
 	}
-	return (int)(res * sign);
+	return ((int)(res * sign));
 }

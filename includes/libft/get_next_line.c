@@ -6,7 +6,7 @@
 /*   By: imaman-s < imaman-s@student.42abudhabi.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/11 13:45:16 by imaman-s          #+#    #+#             */
-/*   Updated: 2022/05/11 13:49:54 by imaman-s         ###   ########.fr       */
+/*   Updated: 2022/05/28 09:05:15 by imaman-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ static int	returns(char **str, char **line, int val, int fd)
 		return (finish(&str[fd], line));
 }
 
-int			get_next_line(const int fd, char **line)
+int	get_next_line(const int fd, char **line)
 {
 	int			val;
 	static char	*str[12000];
@@ -57,7 +57,8 @@ int			get_next_line(const int fd, char **line)
 
 	if (fd < 0 || line == NULL)
 		return (-1);
-	while ((val = read(fd, buff, BUFF_SIZE)) > 0)
+	val = read(fd, buff, BUFF_SIZE);
+	while (val > 0)
 	{
 		buff[val] = '\0';
 		if (str[fd] == NULL)

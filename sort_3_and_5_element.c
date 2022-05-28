@@ -6,7 +6,7 @@
 /*   By: imaman-s < imaman-s@student.42abudhabi.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/07 18:38:10 by imaman-s          #+#    #+#             */
-/*   Updated: 2022/05/11 19:49:12 by imaman-s         ###   ########.fr       */
+/*   Updated: 2022/05/28 09:25:22 by imaman-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_sort_3_element(t_stacks *stacks)
 {
-	int max;
+	int	max;
 
 	max = ft_max(stacks->a);
 	if (stacks->count_a == 1)
@@ -73,9 +73,9 @@ void	ft_sort_5_element(t_stacks *stacks)
 ** <---------------------------------------------->
 */
 
-int		ft_max(t_stack *s)
+int	ft_max(t_stack *s)
 {
-	int max;
+	int	max;
 
 	max = s->data;
 	while (s)

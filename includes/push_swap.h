@@ -6,7 +6,7 @@
 /*   By: imaman-s < imaman-s@student.42abudhabi.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/07 18:38:01 by imaman-s          #+#    #+#             */
-/*   Updated: 2022/05/15 17:17:01 by imaman-s         ###   ########.fr       */
+/*   Updated: 2022/05/28 08:57:04 by imaman-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 # include <stdlib.h>
 # include "./libft/libft.h"
 
-typedef struct		s_steps
+typedef struct s_steps
 {
 	int				count_a;
 	int				count_b;
@@ -25,14 +25,14 @@ typedef struct		s_steps
 	int				dest_b;
 }					t_steps;
 
-typedef struct		s_data
+typedef struct s_data
 {
 	int				a[10000];
 	int				count_element;
 }					t_data;
 
 /*Pointer *next is self referential structure*/
-typedef struct		s_stack
+typedef struct s_stack
 {
 	int				data;
 	int				step;
@@ -40,7 +40,7 @@ typedef struct		s_stack
 	struct s_stack	*next;
 }					t_stack;
 
-typedef struct		s_stacks
+typedef struct s_stacks
 {
 	int				count_a;
 	int				count_b;
@@ -123,7 +123,7 @@ void				ft_global_sort(t_stacks *stacks);
 void				ft_start_sort(t_stacks *stacks);
 void				ft_steps_markup(t_stack *b, int count);
 void				ft_minimum_insertion_steps(t_stacks *stacks,
-							t_steps *steps);
+						t_steps *steps);
 void				ft_instruction_execution(t_stacks *stacks, t_steps *steps);
 
 /*
@@ -133,16 +133,16 @@ void				ft_instruction_execution(t_stacks *stacks, t_steps *steps);
 */
 
 void				ft_help_finding_place(t_stacks *s, t_stack *b,
-							int *action, int *buff);
+						int *action, int *buff);
 int					ft_finding_place(t_stacks *s, t_stack *b,
-							t_steps *steps, int min);
+						t_steps *steps, int min);
 int					ft_smaller_element_detection(t_stack *a, int buff, int src);
 int					ft_count_to_min(t_stack *a, int min);
 
 /*
-** <------------------>
+** <----------------------->
 ** operations.c - operations
-** <------------------>
+** <----------------------->
 */
 
 void				ft_ra(t_stack **a, int i);

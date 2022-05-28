@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   operations_3.c                                        :+:      :+:    :+:   */
+/*   operations_3.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: imaman-s < imaman-s@student.42abudhabi.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/07 18:37:26 by imaman-s          #+#    #+#             */
-/*   Updated: 2022/05/11 19:58:52 by imaman-s         ###   ########.fr       */
+/*   Updated: 2022/05/28 09:19:20 by imaman-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,9 @@
 ** <----------------------------->
 */
 
-int		ft_only_spaces(const char *str)
+int	ft_only_spaces(const char *str)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (str[i] != '\0')
@@ -42,9 +42,9 @@ int		ft_only_spaces(const char *str)
 ** <------------------------->
 */
 
-int		ft_is_sorted(t_data *new)
+int	ft_is_sorted(t_data *new)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (i < (new->count_element - 1))
@@ -61,7 +61,6 @@ int		ft_is_sorted(t_data *new)
 ** rrr: rra and rrb at the same time.
 ** <-------------------------------->
 */
-
 
 void	ft_rrr(t_stacks *s, int i)
 {

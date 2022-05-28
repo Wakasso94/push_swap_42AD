@@ -6,16 +6,16 @@
 /*   By: imaman-s < imaman-s@student.42abudhabi.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/07 18:38:13 by imaman-s          #+#    #+#             */
-/*   Updated: 2022/05/11 19:50:19 by imaman-s         ###   ########.fr       */
+/*   Updated: 2022/05/28 09:27:00 by imaman-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-int		ft_validation(int argc, char **argv)
+int	ft_validation(int argc, char **argv)
 {
-	int i;
-	int ret;
+	int	i;
+	int	ret;
 
 	ret = 0;
 	i = 1;
@@ -43,7 +43,7 @@ int		ft_validation(int argc, char **argv)
 
 void	ft_number_availability(const char *str)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (str[i] != '\0')
@@ -85,7 +85,7 @@ void	ft_valid_str(const char *str)
 			nbr = 0;
 			sign = 0;
 		}
-		else if (((str[i] == '+' || str[i] == '-') &&
+		else if (((str[i] == '+' || str[i] == '-') && \
 				(sign == 0 && nbr == 0)) && (str[i + 1] != '\0'))
 			sign++;
 		else
@@ -105,7 +105,8 @@ void	ft_duplicate_check(t_data *new, t_stacks *stacks)
 {
 	int			*dup;
 
-	if (!(dup = (int *)malloc(sizeof(int) * (new->count_element))))
+	dup = (int *)malloc(sizeof(int) * (new->count_element));
+	if (!dup)
 		exit(1);
 	dup = ft_intcpy(dup, new->a, new->count_element);
 	ft_quick_sort(dup, 0, new->count_element - 1);
@@ -129,7 +130,7 @@ void	ft_duplicate_check(t_data *new, t_stacks *stacks)
 
 void	ft_search_duplicate(const int *dup, int count)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (i != count)

@@ -6,7 +6,7 @@
 /*   By: imaman-s < imaman-s@student.42abudhabi.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/07 18:37:44 by imaman-s          #+#    #+#             */
-/*   Updated: 2022/05/11 19:45:12 by imaman-s         ###   ########.fr       */
+/*   Updated: 2022/05/25 16:10:20 by imaman-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,11 +56,11 @@ void	ft_help_finding_place(t_stacks *s, t_stack *b, int *action, int *buff)
 ** <--------------------------------------------------------------->
 */
 
-int		ft_finding_place(t_stacks *s, t_stack *b, t_steps *steps, int min)
+int	ft_finding_place(t_stacks *s, t_stack *b, t_steps *steps, int min)
 {
-	int action;
-	int res;
-	int buff;
+	int		action;
+	int		res;
+	int		buff;
 
 	action = 0;
 	buff = 0;
@@ -88,7 +88,7 @@ int		ft_finding_place(t_stacks *s, t_stack *b, t_steps *steps, int min)
 ** <--------------------------------------------------->
 */
 
-int		ft_smaller_element_detection(t_stack *a, int buff, int src)
+int	ft_smaller_element_detection(t_stack *a, int buff, int src)
 {
 	t_stack	*save;
 	int		ret;
@@ -111,9 +111,9 @@ int		ft_smaller_element_detection(t_stack *a, int buff, int src)
 ** <--------------------------------------------------------->
 */
 
-int		ft_count_to_min(t_stack *a, int min)
+int	ft_count_to_min(t_stack *a, int min)
 {
-	int i;
+	int		i;
 
 	i = 0;
 	while (a)

@@ -6,7 +6,7 @@
 /*   By: imaman-s < imaman-s@student.42abudhabi.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/07 18:38:04 by imaman-s          #+#    #+#             */
-/*   Updated: 2022/05/11 19:48:24 by imaman-s         ###   ########.fr       */
+/*   Updated: 2022/05/28 09:24:20 by imaman-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_quick_sort(int *array, int start, int end)
 {
-	int q;
+	int	q;
 
 	if (start < end)
 	{
@@ -31,12 +31,12 @@ void	ft_quick_sort(int *array, int start, int end)
 ** <------------------------------------------->
 */
 
-int		ft_partition(int *array, int start, int end)
+int	ft_partition(int *array, int start, int end)
 {
-	int pivot;
-	int i;
-	int temp;
-	int j;
+	int	pivot;
+	int	i;
+	int	temp;
+	int	j;
 
 	pivot = array[end];
 	i = start - 1;

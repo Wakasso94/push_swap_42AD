@@ -6,7 +6,7 @@
 /*   By: imaman-s < imaman-s@student.42abudhabi.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/11 13:45:13 by imaman-s          #+#    #+#             */
-/*   Updated: 2022/05/11 13:49:39 by imaman-s         ###   ########.fr       */
+/*   Updated: 2022/05/28 09:04:18 by imaman-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,8 @@ char	*ft_strsub(char const *s, unsigned int start, size_t len)
 	i = 0;
 	if (!s || ((start + 1) == 0) || (len + 1) == 0)
 		return (NULL);
-	if (!(str = (char *)malloc(sizeof(*s) * (len) + 1)))
+	str = (char *)malloc(sizeof(*s) * (len) + 1);
+	if (!str)
 		return (NULL);
 	end = start + len;
 	while (start < end)
