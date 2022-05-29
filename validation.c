@@ -6,7 +6,7 @@
 /*   By: imaman-s < imaman-s@student.42abudhabi.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/07 18:38:13 by imaman-s          #+#    #+#             */
-/*   Updated: 2022/05/28 09:27:00 by imaman-s         ###   ########.fr       */
+/*   Updated: 2022/05/29 13:36:13 by imaman-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -110,7 +110,7 @@ void	ft_duplicate_check(t_data *new, t_stacks *stacks)
 		exit(1);
 	dup = ft_intcpy(dup, new->a, new->count_element);
 	ft_quick_sort(dup, 0, new->count_element - 1);
-	ft_search_duplicate(dup, new->count_element - 1);
+	ft_search_duplicate(dup, new->count_element - 1, new, stacks);
 	stacks->count_a = new->count_element;
 	stacks->count_b = 0;
 	stacks->min = dup[0];
@@ -120,15 +120,22 @@ void	ft_duplicate_check(t_data *new, t_stacks *stacks)
 }
 
 /*
+** <------------------------------------------------->
 ** ft_search_duplicate - Check an array of numbers for
 ** presence of duplicates.
-** ༺༻
-** Condition: ✓
-** Norms: ✓
-** ༺༻
+** <------------------------------------------------->
 */
 
-void	ft_search_duplicate(const int *dup, int count)
+void	ft_free(int *dup, t_data *new, t_stacks *stacks)
+{
+	free(new);
+	free(dup);
+	ft_free_stack(stacks);
+	free(stacks);
+	ft_error();
+}
+
+void	ft_search_duplicate(int *dup, int count, t_data *new, t_stacks *stacks)
 {
 	int	i;
 
@@ -136,7 +143,7 @@ void	ft_search_duplicate(const int *dup, int count)
 	while (i != count)
 	{
 		if (dup[i] == dup[i + 1])
-			ft_error();
+			ft_free(dup, new, stacks);
 		i++;
 	}
 }

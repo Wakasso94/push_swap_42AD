@@ -6,7 +6,7 @@
 /*   By: imaman-s < imaman-s@student.42abudhabi.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/07 18:38:01 by imaman-s          #+#    #+#             */
-/*   Updated: 2022/05/28 08:57:04 by imaman-s         ###   ########.fr       */
+/*   Updated: 2022/05/29 13:50:41 by imaman-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ typedef struct s_steps
 
 typedef struct s_data
 {
-	int				a[10000];
+	int				a[100000];
 	int				count_element;
 }					t_data;
 
@@ -60,6 +60,7 @@ typedef struct s_stacks
 int					ft_only_spaces(const char *str);
 int					ft_is_sorted(t_data *new);
 void				ft_rrr(t_stacks *s, int i);
+void				ft_free(int *dup, t_data *new, t_stacks *stacks);
 
 /*
 ** <----------------------->
@@ -71,7 +72,7 @@ int					ft_validation(int argc, char **argv);
 void				ft_number_availability(const char *str);
 void				ft_valid_str(const char *str);
 void				ft_duplicate_check(t_data *new, t_stacks *stacks);
-void				ft_search_duplicate(const int *dup, int count);
+void				ft_search_duplicate(int *dup, int count, t_data *new, t_stacks *stacks);
 
 /*
 ** <------------------------------->
@@ -152,9 +153,9 @@ void				ft_rra(t_stack **a, int i);
 void				ft_rrb(t_stack **b, int i);
 
 /*
-** <----------------->
+** <----------------------->
 ** operations.c - operations
-** <----------------->
+** <----------------------->
 */
 
 void				ft_sa(t_stack *a, int i);

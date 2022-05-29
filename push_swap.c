@@ -6,7 +6,7 @@
 /*   By: imaman-s < imaman-s@student.42abudhabi.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/07 18:37:57 by imaman-s          #+#    #+#             */
-/*   Updated: 2022/05/28 09:51:50 by imaman-s         ###   ########.fr       */
+/*   Updated: 2022/05/29 14:11:20 by imaman-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,15 +29,13 @@ int	main(int argc, char **argv)
 
 	if (argc < 2)
 		exit(1);
-	new = (t_data *)malloc(sizeof(t_data));
-	if (!new)
-		exit(1);
-	stacks = (t_stacks *)malloc(sizeof(t_stacks));
-	if (!stacks)
-		exit(1);
-	ft_null(stacks, new);
 	if (ft_validation(argc, argv))
 	{
+		new = (t_data *)malloc(sizeof(t_data));
+		stacks = (t_stacks *)malloc(sizeof(t_stacks));
+		if (!new || !stacks)
+			exit (1);
+		ft_null(stacks, new);
 		ft_array_separation(argc, argv, new);
 		ft_duplicate_check(new, stacks);
 		if (ft_is_sorted(new))

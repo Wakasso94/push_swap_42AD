@@ -6,7 +6,7 @@
 /*   By: imaman-s < imaman-s@student.42abudhabi.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/07 18:38:07 by imaman-s          #+#    #+#             */
-/*   Updated: 2022/05/28 09:24:59 by imaman-s         ###   ########.fr       */
+/*   Updated: 2022/05/29 14:12:11 by imaman-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ void	ft_array_separation(int argc, char **argv, t_data *new)
 		mass = ft_strsplit(argv[i], count_element);
 		buff = (int *)malloc(sizeof(int) * (count_element));
 		if (!buff)
-			exit(1);
+			return ;
 		while (count_element > ++p)
 		{
 			buff[p] = ft_atoi(mass[p]);

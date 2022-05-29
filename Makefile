@@ -6,7 +6,7 @@
 #    By: imaman-s < imaman-s@student.42abudhabi.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/07 18:37:53 by imaman-s          #+#    #+#              #
-#    Updated: 2022/05/15 17:17:01 by imaman-s         ###   ########.fr        #
+#    Updated: 2022/05/28 18:43:11 by imaman-s         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME1	= push_swap
 
 NAME2	= checker
 
-CFLAGS 	= -Wall -Wextra -Werror
+CFLAGS 	= -g3 -Wall -Wextra -Werror
 
 SRC1 	= push_swap.c validation.c operations.c operations_2.c operations_3.c \
 			quick_sort.c separation.c initialization.c sort_3_and_5_element.c \
